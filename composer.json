@@ -1,16 +1,16 @@
 {
-    "name": ":vendor_name/:package_name",
-    "description": ":package_description",
+    "name": "syarifid/try-package",
+    "description": "First Laravel Package Demo",
     "keywords": [
-        ":vendor_name",
-        ":package_name"
+        "syarifid",
+        "try-package"
     ],
-    "homepage": "https://github.com/:vendor_name/:package_name",
+    "homepage": "https://github.com/syarifid/try-package",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
+            "name": "Muhammad Syarifudin",
+            "email": "muhammad_syarif@students.itb.ac.id",
             "role": "Developer"
         }
     ],
@@ -24,13 +24,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Skeleton\\": "src",
-            "Spatie\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Syarifid\\TryPackage\\": "src",
+            "Syarifid\\TryPackage\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Skeleton\\Tests\\": "tests"
+            "Syarifid\\TryPackage\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -44,10 +44,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\Skeleton\\SkeletonServiceProvider"
+                "Syarifid\\TryPackage\\TryPackageServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "Spatie\\Skeleton\\SkeletonFacade"
+                "TryPackage": "Syarifid\\TryPackage\\TryPackageFacade"
             }
         }
     },

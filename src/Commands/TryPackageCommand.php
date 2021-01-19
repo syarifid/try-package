@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\Skeleton\Commands;
+namespace Syarifid\TryPackage\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class TryPackageCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'try-package';
 
     public $description = 'My command';
 
