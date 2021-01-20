@@ -12,7 +12,7 @@ class TryPackageCommand extends Command
 
     public function handle()
     {
-    	$outputText = config('try-package.command_output_text');
+        $outputText = config('try-package.command_output_text');
 
         $this->comment($outputText);
     }
