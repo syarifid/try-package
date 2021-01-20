@@ -12,6 +12,8 @@ class TryPackageCommand extends Command
 
     public function handle()
     {
-        $this->comment('All done');
+    	$outputText = config('try-package.command_output_text');
+
+        $this->comment($outputText);
     }
 }
