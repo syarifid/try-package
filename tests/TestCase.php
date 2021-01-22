@@ -33,9 +33,9 @@ class TestCase extends Orchestra
             'prefix' => '',
         ]);
 
-        /*
+        
         include_once __DIR__.'/../database/migrations/create_try_package_table.php.stub';
-        (new \CreatePackageTable())->up();
-        */
+        (new \CreateTryPackageTable())->up();
+        
     }
 }
