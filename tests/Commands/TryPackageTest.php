@@ -19,8 +19,8 @@ class TryPackageTest extends TestCase
     public function try_config_file_value_is_used_as_output()
     {
         $this	->artisan('try-package')
-        		->expectsOutput('Hi From Command')
-        		->assertExitCode(0);
+                ->expectsOutput('Hi From Command')
+                ->assertExitCode(0);
 
         $text = 'customized text';
         config()->set('try-package.command_output_text', $text);
