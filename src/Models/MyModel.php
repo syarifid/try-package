@@ -9,12 +9,10 @@ use Illuminate\Database\Eloquent\Model;
  */
 class MyModel extends Model
 {
-	
-	public $guarded = [];
+    public $guarded = [];
 
-	public function getUpperCasedName(): string
-	{
-		return strtoupper($this->name);
-	}
-
+    public function getUpperCasedName(): string
+    {
+        return strtoupper($this->name);
+    }
 }

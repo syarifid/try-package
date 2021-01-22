@@ -10,15 +10,15 @@ use Syarifid\TryPackage\Tests\TestCase;
  */
 class MyModelTest extends TestCase
 {
-	/** @test */
-	public function it_can_create_a_model()
-	{
+    /** @test */
+    public function it_can_create_a_model()
+    {
 
-		/** @var MyModel $model */
-		$model = MyModel::create(['name' => 'John']);
+        /** @var MyModel $model */
+        $model = MyModel::create(['name' => 'John']);
 
-		$this->assertDatabaseCount('my_models', 1);
+        $this->assertDatabaseCount('my_models', 1);
 
-		$this->assertEquals('JOHN', $model->getUpperCasedName());
-	}
+        $this->assertEquals('JOHN', $model->getUpperCasedName());
+    }
 }

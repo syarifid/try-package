@@ -36,6 +36,5 @@ class TestCase extends Orchestra
         
         include_once __DIR__.'/../database/migrations/create_try_package_table.php.stub';
         (new \CreateTryPackageTable())->up();
-        
     }
 }
