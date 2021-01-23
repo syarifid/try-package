@@ -26,10 +26,10 @@ class MyModelTest extends TestCase
     /** @test */
     public function it_can_use_json_queries()
     {
-    	$models = DB::table('my_models')
-    		->whereJsonContains('option->languages', 'en')
-    		->get();
+        $models = DB::table('my_models')
+            ->whereJsonContains('option->languages', 'en')
+            ->get();
 
-    	$this->assertCount(0, $models);
+        $this->assertCount(0, $models);
     }
 }

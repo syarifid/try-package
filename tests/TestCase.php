@@ -3,8 +3,8 @@
 namespace Syarifid\TryPackage\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Schema;
 use Orchestra\Testbench\TestCase as Orchestra;
+use Schema;
 use Syarifid\TryPackage\TryPackageServiceProvider;
 
 class TestCase extends Orchestra
