@@ -2,6 +2,7 @@
 
 namespace Syarifid\TryPackage\Tests\Models;
 
+use DB;
 use Syarifid\TryPackage\Models\MyModel;
 use Syarifid\TryPackage\Tests\TestCase;
 
@@ -20,5 +21,15 @@ class MyModelTest extends TestCase
         $this->assertDatabaseCount('my_models', 1);
 
         $this->assertEquals('JOHN', $model->getUpperCasedName());
+    }
+
+    /** @test */
+    public function it_can_use_json_queries()
+    {
+    	$models = DB::table('my_models')
+    		->whereJsonContains('option->languages', 'en')
+    		->get();
+
+    	$this->assertCount(0, $models);
     }
 }

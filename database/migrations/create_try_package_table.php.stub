@@ -12,6 +12,7 @@ class CreateTryPackageTable extends Migration
             $table->bigIncrements('id');
 
             $table->string('name');
+            $table->string('option')->default('en');
 
             $table->timestamps();
         });
